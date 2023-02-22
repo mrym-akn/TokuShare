@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F0BCC2029A44EF0004AF370 /* CropViewController in Frameworks */ = {isa = PBXBuildFile; productRef = 7F0BCC1F29A44EF0004AF370 /* CropViewController */; };
+		7F0BCC2629A46801004AF370 /* ImageCrop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F0BCC2529A46801004AF370 /* ImageCrop.swift */; };
 		7F568A3E299C8E1000C2337D /* MainTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F568A3D299C8E1000C2337D /* MainTab.swift */; };
 		7F568A42299C8E3900C2337D /* PassChangeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F568A41299C8E3900C2337D /* PassChangeView.swift */; };
 		7F568A44299C8E4900C2337D /* NewUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F568A43299C8E4900C2337D /* NewUserView.swift */; };
@@ -42,10 +44,13 @@
 		7F79514E299F310200430307 /* UploadName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F79514D299F310200430307 /* UploadName.swift */; };
 		7F795150299F32EA00430307 /* PassChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F79514F299F32EA00430307 /* PassChange.swift */; };
 		7F795152299F34F800430307 /* DeleteUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F795151299F34F800430307 /* DeleteUser.swift */; };
-		7F795155299F3A4600430307 /* LogOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F795154299F3A4600430307 /* LogOut.swift */; };
+		7F795155299F3A4600430307 /* Logout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F795154299F3A4600430307 /* Logout.swift */; };
 		7F7F71F5299E0BB500029DD0 /* LikesData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7F71F4299E0BB500029DD0 /* LikesData.swift */; };
 		7F7F71F8299E1A1A00029DD0 /* NewNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7F71F7299E1A1A00029DD0 /* NewNameView.swift */; };
 		7F7F71FE299F0C9B00029DD0 /* DeleteUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7F71FD299F0C9B00029DD0 /* DeleteUserView.swift */; };
+		7FBFCA1F29A495E10026C5ED /* SearchTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBFCA1E29A495E10026C5ED /* SearchTestView.swift */; };
+		7FBFCA2129A497250026C5ED /* SearchAll.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBFCA2029A497250026C5ED /* SearchAll.swift */; };
+		7FBFCA2329A497B00026C5ED /* AllResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBFCA2229A497B00026C5ED /* AllResult.swift */; };
 		7FD500DE298B615A004A3442 /* TokuShareApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD500DD298B615A004A3442 /* TokuShareApp.swift */; };
 		7FD500E0298B615A004A3442 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD500DF298B615A004A3442 /* ContentView.swift */; };
 		7FD500E2298B6160004A3442 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7FD500E1298B6160004A3442 /* Assets.xcassets */; };
@@ -53,6 +58,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7F0BCC2529A46801004AF370 /* ImageCrop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCrop.swift; sourceTree = "<group>"; };
 		7F568A3D299C8E1000C2337D /* MainTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTab.swift; sourceTree = "<group>"; };
 		7F568A41299C8E3900C2337D /* PassChangeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassChangeView.swift; sourceTree = "<group>"; };
 		7F568A43299C8E4900C2337D /* NewUserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewUserView.swift; sourceTree = "<group>"; };
@@ -83,10 +89,13 @@
 		7F79514D299F310200430307 /* UploadName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadName.swift; sourceTree = "<group>"; };
 		7F79514F299F32EA00430307 /* PassChange.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassChange.swift; sourceTree = "<group>"; };
 		7F795151299F34F800430307 /* DeleteUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteUser.swift; sourceTree = "<group>"; };
-		7F795154299F3A4600430307 /* LogOut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogOut.swift; sourceTree = "<group>"; };
+		7F795154299F3A4600430307 /* Logout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logout.swift; sourceTree = "<group>"; };
 		7F7F71F4299E0BB500029DD0 /* LikesData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikesData.swift; sourceTree = "<group>"; };
 		7F7F71F7299E1A1A00029DD0 /* NewNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewNameView.swift; sourceTree = "<group>"; };
 		7F7F71FD299F0C9B00029DD0 /* DeleteUserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteUserView.swift; sourceTree = "<group>"; };
+		7FBFCA1E29A495E10026C5ED /* SearchTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTestView.swift; sourceTree = "<group>"; };
+		7FBFCA2029A497250026C5ED /* SearchAll.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchAll.swift; sourceTree = "<group>"; };
+		7FBFCA2229A497B00026C5ED /* AllResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllResult.swift; sourceTree = "<group>"; };
 		7FD500DA298B615A004A3442 /* TokuShare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TokuShare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FD500DD298B615A004A3442 /* TokuShareApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokuShareApp.swift; sourceTree = "<group>"; };
 		7FD500DF298B615A004A3442 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -104,6 +113,7 @@
 				7F568A8C299C93D700C2337D /* FirebaseFirestore in Frameworks */,
 				7F568A8E299C93D700C2337D /* FirebaseFirestoreSwift in Frameworks */,
 				7F568A94299CA93400C2337D /* Kingfisher in Frameworks */,
+				7F0BCC2029A44EF0004AF370 /* CropViewController in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -171,6 +181,7 @@
 				7F568A81299C90B000C2337D /* NewUser */,
 				7F568A82299C90C800C2337D /* LoginView */,
 				7F568A83299C90D800C2337D /* SearchView */,
+				7FBFCA2429A498470026C5ED /* AllSearch */,
 				7F568A84299C90EE00C2337D /* MyPageView */,
 				7F568A85299C90FD00C2337D /* UpLoadView */,
 				7F568A7D299C905300C2337D /* TimeLineVIew */,
@@ -227,11 +238,21 @@
 			isa = PBXGroup;
 			children = (
 				7F795151299F34F800430307 /* DeleteUser.swift */,
-				7F795154299F3A4600430307 /* LogOut.swift */,
+				7F795154299F3A4600430307 /* Logout.swift */,
 				7F79514F299F32EA00430307 /* PassChange.swift */,
 				7F79514D299F310200430307 /* UploadName.swift */,
 			);
 			path = User;
+			sourceTree = "<group>";
+		};
+		7FBFCA2429A498470026C5ED /* AllSearch */ = {
+			isa = PBXGroup;
+			children = (
+				7FBFCA2029A497250026C5ED /* SearchAll.swift */,
+				7FBFCA1E29A495E10026C5ED /* SearchTestView.swift */,
+				7FBFCA2229A497B00026C5ED /* AllResult.swift */,
+			);
+			path = AllSearch;
 			sourceTree = "<group>";
 		};
 		7FD500D1298B6159004A3442 = {
@@ -256,6 +277,7 @@
 				7FD500DD298B615A004A3442 /* TokuShareApp.swift */,
 				7F568A61299C8F4D00C2337D /* Extensions.swift */,
 				7F568A63299C8F5B00C2337D /* ImagePicker.swift */,
+				7F0BCC2529A46801004AF370 /* ImageCrop.swift */,
 				7F568A79299C8FF500C2337D /* ViewModel */,
 				7F568A7E299C907E00C2337D /* View */,
 				7F568A7C299C903A00C2337D /* API */,
@@ -297,6 +319,7 @@
 				7F568A8D299C93D700C2337D /* FirebaseFirestoreSwift */,
 				7F568A8F299C93D700C2337D /* FirebaseStorage */,
 				7F568A93299CA93400C2337D /* Kingfisher */,
+				7F0BCC1F29A44EF0004AF370 /* CropViewController */,
 			);
 			productName = TokuShare;
 			productReference = 7FD500DA298B615A004A3442 /* TokuShare.app */;
@@ -330,6 +353,7 @@
 				7F568A88299C93D700C2337D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				7F568A91299C9DF600C2337D /* XCRemoteSwiftPackageReference "Kingfisher" */,
 				7F568A92299CA93400C2337D /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				7F0BCC1E29A44EF0004AF370 /* XCRemoteSwiftPackageReference "TOCropViewController" */,
 			);
 			productRefGroup = 7FD500DB298B615A004A3442 /* Products */;
 			projectDirPath = "";
@@ -360,6 +384,7 @@
 			files = (
 				7F568A66299C8F6300C2337D /* Login.swift in Sources */,
 				7F568A6C299C8F8A00C2337D /* UploadViewModel.swift in Sources */,
+				7FBFCA1F29A495E10026C5ED /* SearchTestView.swift in Sources */,
 				7F568A46299C8E5500C2337D /* LoginView.swift in Sources */,
 				7F568A42299C8E3900C2337D /* PassChangeView.swift in Sources */,
 				7F568A6E299C8F9600C2337D /* SearchGoods.swift in Sources */,
@@ -367,8 +392,10 @@
 				7F568A48299C8E6200C2337D /* LoginViewItem.swift in Sources */,
 				7F568A76299C8FC100C2337D /* User.swift in Sources */,
 				7FD500E0298B615A004A3442 /* ContentView.swift in Sources */,
+				7FBFCA2329A497B00026C5ED /* AllResult.swift in Sources */,
 				7F795152299F34F800430307 /* DeleteUser.swift in Sources */,
-				7F795155299F3A4600430307 /* LogOut.swift in Sources */,
+				7FBFCA2129A497250026C5ED /* SearchAll.swift in Sources */,
+				7F795155299F3A4600430307 /* Logout.swift in Sources */,
 				7F568A72299C8FAD00C2337D /* SearchPrice.swift in Sources */,
 				7F568A70299C8FA200C2337D /* SearchShop.swift in Sources */,
 				7F568A58299C8ECE00C2337D /* TimeLineView.swift in Sources */,
@@ -379,6 +406,7 @@
 				7F568A52299C8EA300C2337D /* MyPageView.swift in Sources */,
 				7F79514E299F310200430307 /* UploadName.swift in Sources */,
 				7F568A4C299C8E7E00C2337D /* GoodsResult.swift in Sources */,
+				7F0BCC2629A46801004AF370 /* ImageCrop.swift in Sources */,
 				7F795150299F32EA00430307 /* PassChange.swift in Sources */,
 				7F568A50299C8E9800C2337D /* PriceResult.swift in Sources */,
 				7F568A74299C8FB800C2337D /* Post.swift in Sources */,
@@ -597,6 +625,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		7F0BCC1E29A44EF0004AF370 /* XCRemoteSwiftPackageReference "TOCropViewController" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/TimOliver/TOCropViewController.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
 		7F568A88299C93D700C2337D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
@@ -624,6 +660,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		7F0BCC1F29A44EF0004AF370 /* CropViewController */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7F0BCC1E29A44EF0004AF370 /* XCRemoteSwiftPackageReference "TOCropViewController" */;
+			productName = CropViewController;
+		};
 		7F568A89299C93D700C2337D /* FirebaseAuth */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 7F568A88299C93D700C2337D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;

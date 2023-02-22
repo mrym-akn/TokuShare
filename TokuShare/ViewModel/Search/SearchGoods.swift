@@ -21,8 +21,7 @@ class SearchGoods: ObservableObject{
         
         
         posts
-            //.order(by: "timestamp", descending: true) //更新日時の新しい順
-            //(whereFieldとorderで別フィールド(goodsNameのtimestamp昇順とか)を指定できない)
+            .order(by: "price", descending: false) //更新日時の新しい順
             .getDocuments { (querySnapshot, error) in
             if let error = error{
                 print(error.localizedDescription)

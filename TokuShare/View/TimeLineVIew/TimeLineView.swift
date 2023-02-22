@@ -13,15 +13,28 @@ struct TimeLineView: View {
             ZStack{
                 VStack{
                     TLItem()
+                    HStack{
                     NavigationLink(destination: SearchView()) {
                         HStack {
                             Image(systemName: "chevron.right")
                                 .foregroundColor(.white)
-                            Text("検索")
+                            Text("項目検索")
+                                .foregroundColor(.white)
+                        }.padding()
+                        Spacer()
+                    }.background(Color(.systemCyan))
+                    //↑項目で検索
+                    NavigationLink(destination: SearchAllView()) {
+                        HStack {
+                            Image(systemName: "chevron.right")
+                                .foregroundColor(.white)
+                            Text("詳細検索")
                                 .foregroundColor(.white)
                         }.padding()
                         Spacer()
                     }.background(Color(.systemBlue))
+                    //↑全条件で検索
+                    }
                 }
             }
         }

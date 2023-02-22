@@ -13,8 +13,6 @@ class SearchPrice: ObservableObject{
     var post : Post?
     
     func fetchPriceData(priceNumber: Int){
-        
-        //let posts = Firestore.firestore().collection("posts").whereField("price", isEqualTo: priceNumber)
         let posts = Firestore.firestore().collection("posts").whereField("price", isEqualTo: priceNumber)
         //価格検索
         //.whereField("shopName", isEqualTo: shop)//店舗名検索
@@ -24,8 +22,7 @@ class SearchPrice: ObservableObject{
         
         
         posts
-        //.order(by: "timestamp", descending: true) //更新日時の新しい順
-        //(whereFieldとorderで別フィールド(goodsNameのtimestamp昇順とか)を指定できない)
+        .order(by: "timestamp", descending: false) //更新日時の新しい順
             .getDocuments { (querySnapshot, error) in
                 if let error = error{
                     print(error.localizedDescription)

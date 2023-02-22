@@ -1,36 +1,36 @@
 //
-//  SearchShop.swift
+//  SearchAll.swift
 //  TokuShare
 //
-//  Created by cmStudent on 2023/02/15.
+//  Created by cmStudent on 2023/02/21.
 //
+//全条件必須の検索
 
 import SwiftUI
 import FirebaseFirestore
 
-class SearchShop: ObservableObject{
-    var posts = [Post]()
-    @Published var tgl = true
-   // var post : Post?
+class SearchAll: ObservableObject{
+    @Published var posts = [Post]()
+    var post : Post?
     
-    func fetchShopData(shop: String){
-        //let posts = Firestore.firestore().collection("posts").whereField("shopName", isEqualTo: shop)
-        let posts = Firestore.firestore().collection("posts").whereField("shopName", isEqualTo: shop)
-        //店舗名検索
-        //.whereField("goodsName", isEqualTo: goods)//商品名検索
-        //.whereField("price", isEqualTo: 100)//価格検索
-        
+    func fetchAllData(goods: String, shop: String, price: Int){
+        //let posts = Firestore.firestore().collection("posts").whereField("goodsName", isEqualTo: goods)
+        let posts = Firestore.firestore().collection("posts")
+            .whereField("goodsName", isEqualTo: goods).whereField("shopName", isEqualTo: shop).whereField("price", isEqualTo: price)
+        //商品,店舗名,価格検索
         
         posts
-        .order(by: "price", descending: false) //更新日時の新しい順
+            .order(by: "timestamp", descending: false)
             .getDocuments { (querySnapshot, error) in
                 if let error = error{
                     print(error.localizedDescription)
                     return
                 }
+                
                 guard let snap = querySnapshot else { return }
-                self.posts = []
+                
                 let documents = snap.documents
+                
                 for document in documents{
                     let id = document.documentID
                     guard let ownerUsername = document.get("ownerUsername") as? String,
@@ -47,11 +47,10 @@ class SearchShop: ObservableObject{
                     
                     let date = timeStamp.dateValue()
                     let data = Post(id: id, ownerUid: ownerUid, imageUrl: imageUrl, ownerUsername: ownerUsername, goodsName: goodsName, price: price, shopName: shopName, comment: comment, likes: likes, date: date)
+                    
                     self.posts.append(data)
+                    
                 }
-                self.tgl.toggle()
             }
     }
 }
-
-

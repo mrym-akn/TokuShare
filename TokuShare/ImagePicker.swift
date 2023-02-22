@@ -6,8 +6,9 @@
 //
 
 import SwiftUI
+import CropViewController
 
-struct ImagePicker: UIViewControllerRepresentable {
+struct ImagePicker: UIViewControllerRepresentable{
     @Binding var image: UIImage?
     @Environment(\.presentationMode) var mode
     

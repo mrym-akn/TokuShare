@@ -8,7 +8,7 @@
 import FirebaseAuth
 import FirebaseFirestore
 
-class LogOut: ObservableObject{
+class Logout: ObservableObject{
     var isActive:Bool = false
     var userSession = Auth.auth().currentUser
     

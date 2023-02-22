@@ -5,6 +5,7 @@
 //  Created by cmStudent on 2023/02/15.
 //
 
+
 import SwiftUI
 //import Firebase
 //import FirebaseAuth
@@ -61,24 +62,6 @@ struct MyPageViewItem: View {
                             .padding(.bottom)
                             .foregroundColor(Color.red)
                     }
-//                    Button{
-//                        showAlert = true
-//                    } label: {
-//                        Text("アカウント削除")
-//                            .font(.title3)
-//                            .padding(.top)
-//                            .padding(.bottom)
-//                            .foregroundColor(Color.red)
-//                    }
-//                    .alert("アカウント削除しますか？",isPresented: $showAlert){
-//                        Button("はい"){
-//                            viewModel.tapDelete()
-//                        }
-//
-//                        Button("いいえ"){
-//
-//                        }
-//                    }
                     Divider()
                 }
                 Spacer()

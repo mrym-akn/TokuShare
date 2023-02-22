@@ -65,7 +65,7 @@ struct NewUserView: View {
                 .frame(height: 50)
                 .overlay(RoundedRectangle(cornerRadius: 15)
                     .stroke(Color.gray,lineWidth: 1))
-            
+            //新規登録なのでパスワードを覚えられるよう表示
             
             Button{
                 login.entry()

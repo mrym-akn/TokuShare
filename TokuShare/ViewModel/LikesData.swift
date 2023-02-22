@@ -18,7 +18,7 @@ class LikesData: ObservableObject{
             if let error = error {
                 print(error.localizedDescription)
             } else {
-                print("更新成功")
+                print("更新成功 +1")
             }
         }
     }
@@ -29,13 +29,13 @@ class LikesData: ObservableObject{
         let likeCount = like - 1
         if likes == 0{
             //マイナスになるから何もしない
-            print("なぜか0から-1できちゃった")
+            print("無から-1しています")
         } else{
             Firestore.firestore().collection("posts").document(id).updateData(["likes": likeCount]){ error in
                 if let error = error {
                     print(error.localizedDescription)
                 } else {
-                    print("更新成功")
+                    print("更新成功 -1")
                 }
             }
         }

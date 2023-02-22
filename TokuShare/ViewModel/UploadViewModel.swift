@@ -24,10 +24,7 @@ class UploadViewModel: ObservableObject{
                         "ownerUsername": user.username] as [String: Any]
             
             Firestore.firestore().collection("posts").addDocument(data: data, completion: completion)
-            print("DEBUG: 投稿しました")
-            //            COLLECTION_POSTS.addDocument(data: data){ _ in
-            //                print("DEBUG: UPLOADPOST")
-            //            }
+            print("投稿成功: \(data)")
         }
     }
 }

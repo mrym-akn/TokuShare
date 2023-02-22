@@ -1,23 +1,23 @@
 //
-//  PriceResult.swift
+//  AllResult.swift
 //  TokuShare
 //
-//  Created by cmStudent on 2023/02/15.
+//  Created by cmStudent on 2023/02/21.
 //
 
 import SwiftUI
 import Kingfisher
 
-struct PriceResult: View {
-   // @State var img = "heart"
+struct AllResult: View {
+    //@State var img = "heart"
     @State var likeComp = false
-    @ObservedObject var viewModel = SearchPrice()
+    @ObservedObject var viewModel = SearchAll()
     @ObservedObject var likesData = LikesData()
     @State private var showAlert = false
     @State var alertText = ""
     
-    init(priceNum: Int) {
-        self.viewModel.fetchPriceData(priceNumber: priceNum)
+    init(goodsString: String, shopString: String, priceInt: Int) {
+        self.viewModel.fetchAllData(goods: goodsString, shop: shopString, price: priceInt)
     }
     
     var body: some View {
@@ -76,23 +76,20 @@ struct PriceResult: View {
                                         alertText = ""
                                     }
                                    // showAlert = true
-                                } label: {
+                                }  label: {
                                     Image(systemName: "heart.fill")
                                         .resizable()
                                         .frame(width: 20, height: 20)
                                         .foregroundColor(Color.pink)
                                 }
-//                                .alert(isPresented: $showAlert){
-//                                        Alert(title: Text("\(alertText)"))
-//                                }
+                                .alert(isPresented: $showAlert){
+                                        Alert(title: Text("\(alertText)"))
+                                }
                             }.padding()
                         }
                         Divider()
                     }
                 }//.navigationBarBackButtonHidden(true)
-                //            }.onAppear(){
-                //                self.viewModel.fetchData()
-                //            }
             }
         }
     }

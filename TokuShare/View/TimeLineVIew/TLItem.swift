@@ -69,7 +69,7 @@ struct TLItem: View {
                                         likesData.unLikes(like: post.likes, id: post.id!)
                                         alertText = "-1"
                                     }
-                                    DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+                                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
                                         alertText = ""
                                     }
                                    // showAlert = true
@@ -78,9 +78,6 @@ struct TLItem: View {
                                         .resizable()
                                         .frame(width: 20, height: 20)
                                         .foregroundColor(Color.pink)
-                                }
-                                .alert(isPresented: $showAlert){
-                                        Alert(title: Text("\(alertText)"))
                                 }
                             }
                         }.padding()

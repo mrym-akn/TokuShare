@@ -14,6 +14,7 @@ struct UpLoadView: View {
     
     @State var postImage: Image?
     @State private var selectedImage: UIImage?
+    @State private var showImageCrop = false
     
     @ObservedObject var viewModel = UploadViewModel()
     
@@ -55,6 +56,16 @@ struct UpLoadView: View {
                     }).sheet(isPresented: $imagePickerPresented, onDismiss: loadImage, content: {
                         ImagePicker(image: $selectedImage)
                     })
+                    
+                    Button{
+                        showImageCrop = true
+                    } label:{
+                        Text("トリミング")
+                            .font(.title3)
+                    }
+                    .sheet(isPresented: $showImageCrop, onDismiss: loadImage) {
+                        ImageCrop(image: $selectedImage, visible: $showImageCrop)// done: self.imageCropped)
+                    }
                 }
                 
                 Group{
@@ -90,7 +101,7 @@ struct UpLoadView: View {
                         .overlay(RoundedRectangle(cornerRadius: 15)
                             .stroke(Color.gray,lineWidth: 1))
                         .padding(.bottom)
-                }
+                        }
                 
                 Group{
                     HStack{
@@ -126,6 +137,8 @@ struct UpLoadView: View {
                             .padding(.bottom)
                     }
                 }
+            }.padding()
+            
                 Group{
                     Button {
                         if (goodsText == "" || shopText == "")||(priceInt == 0 || goodsText == ""){
@@ -158,21 +171,21 @@ struct UpLoadView: View {
                                     goodsText = ""
                                     priceInt = 0
                                     shopText = ""
-                                }//2回投稿処理をしないと投稿されないため2回実行
+                                }//2回投稿処理をしないと投稿されないため2回実行 //←トリミングするとマジで2回実行されるため一回に変更 //←一回にしたら投稿されなかったからまた2回
                             }
                         }
                         Button("いいえ"){
                             
                         }
                     }
-                }
+                }.padding()
             }.navigationViewStyle(StackNavigationViewStyle())
                 .navigationBarBackButtonHidden(true)
                 .navigationBarTitle(Text(NSLocalizedString("", comment: "")), displayMode: .inline)
                 .navigationBarHidden(true)
-        }.padding()
+        }
     }
-}
+
 
 extension UpLoadView {
     func loadImage() {

@@ -72,7 +72,7 @@ struct ShopResult: View {
                                         likesData.unLikes(like: post.likes, id: post.id!)
                                         alertText = "-1"
                                     }
-                                    DispatchQueue.main.asyncAfter(deadline: .now() + 1.0) {
+                                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
                                         alertText = ""
                                     }
                                    // showAlert = true
